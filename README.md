@@ -1,0 +1,1 @@
+No End Insight -- The social media platform that finally makes you feel better about life rather than worse.  Hop on whenever you have killer insights to share or whenever you need some extra inspiration.  As you scroll through your feed being uplifted, there's no end 'insight' for what you can learn.
