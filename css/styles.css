@@ -1,0 +1,80 @@
+/*  Color Scheme
+ *
+ *  #ebe9ec     platinum
+ *  #9b9797     gray
+ *  #ffd639     electric yellow
+ *  #212529     dark shadow (BOOTSTRAP BG-DARK)
+ *  black       black
+ *
+ */
+
+/* Other Colors Used
+ *  
+ *  #414141
+ *  #525252
+ *  
+ */
+
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #000000;
+  color: #ebe9ec;
+}
+
+.navbar-brand {
+  padding: 0;
+  font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.content {
+  padding: 2rem;
+  background: black;
+  min-height: 85vh;
+  padding-bottom: 2.5rem;
+}
+
+.yellow-btn {
+  background: #ffd639;
+  border: none;
+  letter-spacing: 1px;
+  font-size: x-large;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.yellow-btn:hover {
+  background: #d1b133;
+}
+
+.sub-header,
+.card-text,
+.card-header-tag,
+.name-footer {
+  color: #9b9797;
+}
+
+.card-header {
+  background-color: #414141;
+  color: #ffd639;
+  font-size: large;
+}
+
+.card-body-tag {
+  color: #525252;
+}
+
+input,
+textarea {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+}
+
+.card-input {
+  background-color: #414141;
+}

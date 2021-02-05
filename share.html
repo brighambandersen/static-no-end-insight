@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/share.css" />
+    <title>Share - No End Insight</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0" href="/feed.html">
+          <img
+            src="/images/lightbulb.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top mx-2"
+          />
+          No End Insight</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav navbar-right">
+            <a class="nav-link" aria-current="page" href="/feed.html">Feed</a>
+            <a class="nav-link" href="/profile.html">Profile</a>
+            <a class="nav-link active" href="/share.html">Share Insight</a>
+            <a class="nav-link" href="/index.html">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Page Content -->
+    <main class="content container portfolio-page">
+      <h1>Share New Insight</h1>
+      <form action="/feed.html">
+        <section class="p-4">
+          <h3 class="sub-header">Add Insight Title</h3>
+          <input
+            type="text"
+            class="bg-dark text-white rounded"
+            name="insight-title"
+            id="insight-title"
+            placeholder="Type title here"
+            required
+          />
+        </section>
+        <section class="p-4">
+          <h3 class="sub-header">Add Insight Body</h3>
+          <textarea
+            class="bg-dark text-white rounded"
+            name="insight-body"
+            id="insight-body"
+            rows="5"
+            placeholder="Type body here"
+            required
+          ></textarea>
+        </section>
+        <section class="p-4">
+          <input
+            type="submit"
+            class="btn dark-btn yellow-btn w-100"
+            value="Share"
+          />
+        </section>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark">
+      <div class="row justify-content-center align-items-center py-3">
+        <div class="col d-flex justify-content-center">
+          <span class="name-footer">No End Insight</span>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a
+            class="btn btn-outline-light float-right"
+            href="https://github.com/brighamband/no-end-insight"
+          >
+            See Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
