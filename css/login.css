@@ -3,5 +3,5 @@
 }
 
 .card-input {
-  background-color: #414141;
+  background-color: var(--dark-gray);
 }

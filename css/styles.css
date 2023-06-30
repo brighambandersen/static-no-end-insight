@@ -1,25 +1,31 @@
-/*  Color Scheme
- *
- *  #ebe9ec     platinum
- *  #9b9797     gray
- *  #ffd639     electric yellow
- *  #212529     dark shadow (BOOTSTRAP BG-DARK)
- *  black       black
- *
- */
-
-/* Other Colors Used
- *  
- *  #414141
- *  #525252
- *  
- */
+/* Color Scheme */
+:root {
+  --platinum: #ebe9ec;
+  --light-gray: #9b9797;
+  --normal-gray: #525252;
+  --dark-gray: #414141;
+  --electric-yellow: #ffd639;
+  --dark-electric-yellow: #d1b133;
+  --black: black;
+  /* Other */
+  --navbar-footer-height: 70px;
+}
 
 html,
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background: #000000;
-  color: #ebe9ec;
+  background: var(--black);
+  color: var(--platinum);
+}
+
+nav {
+  min-height: var(
+    --navbar-footer-height
+  ); /* Min height and not just height because navbar expands with mobile hamburger menu */
+}
+
+.nav-footer {
+  height: var(--navbar-footer-height);
 }
 
 .navbar-brand {
@@ -33,13 +39,15 @@ body {
 
 .content {
   padding: 2rem;
-  background: black;
-  min-height: 85vh;
+  background: var(--black);
   padding-bottom: 2.5rem;
+  min-height: calc(
+    100vh - var(--navbar-footer-height) - var(--navbar-footer-height)
+  );
 }
 
 .yellow-btn {
-  background: #ffd639;
+  background: var(--electric-yellow);
   border: none;
   letter-spacing: 1px;
   font-size: x-large;
@@ -48,24 +56,24 @@ body {
 }
 
 .yellow-btn:hover {
-  background: #d1b133;
+  background: var(--dark-electric-yellow);
 }
 
 .sub-header,
 .card-text,
 .card-header-tag,
 .name-footer {
-  color: #9b9797;
+  color: var(--light-gray);
 }
 
 .card-header {
-  background-color: #414141;
-  color: #ffd639;
+  background-color: var(--dark-gray);
+  color: var(--electric-yellow);
   font-size: large;
 }
 
 .card-body-tag {
-  color: #525252;
+  color: var(--normal-gray);
 }
 
 input,
